@@ -1,0 +1,13 @@
+{
+  "name": "fuyun-house-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "福运小屋 API：Cloudflare Workers + KV",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+# 福运小屋 · Cloudflare Worker 配置
+# 部署前必改两处：
+#   1) vars.API_KEY     改成你自己的密钥（与 frontend/index.html 顶部 API_KEY 保持一致）
+#   2) kv_namespaces.id 改成你在 Cloudflare 创建的 KV 命名空间 ID
+
+name = "fuyun-house-api"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+# 写接口鉴权密钥：前端 index.html 的 API_KEY 必须与这里一致
+vars = { API_KEY = "change-me-please" }
+
+# KV 命名空间：先在 Cloudflare 控制台 Workers → KV 里创建，把 ID 粘贴到下面
+[[kv_namespaces]]
+binding = "KV"
+id = "PASTE_YOUR_KV_NAMESPACE_ID_HERE"
+#（注：内容由AI生成）
