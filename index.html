@@ -517,8 +517,8 @@ KEYS.forEach(k=>state[k]=DEFAULTS[k]);
    部署后把 WORKER_URL 改成你的 Worker 地址（形如 https://xxx.workers.dev）
    API_KEY 必须与 worker/wrangler.toml 里的 vars.API_KEY 完全一致
    ============================================================ */
-const WORKER_URL='https://PASTE-YOUR-WORKER-URL.workers.dev';
-const API_KEY='change-me-please';
+const WORKER_URL='https://fuyunzhuye.pages.dev/';
+const API_KEY='83955506';
 const api=p=>WORKER_URL.replace(/\/$/,'')+'/api'+p;
 let offline=false;
 async function apiFetch(path,opt={}){
